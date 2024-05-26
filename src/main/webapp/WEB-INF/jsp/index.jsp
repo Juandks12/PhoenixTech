@@ -25,7 +25,7 @@
           <a class="nav-link active" aria-current="page" href="/vsc-product">Productos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="${pageContext.request.contextPath}/quienes.html">Sobre Nosotros</a>
+          <a class="nav-link active" href="/quienes">Sobre Nosotros</a>
         </li>
       </ul>
       <ul class="navbar-nav">

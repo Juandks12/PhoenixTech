@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhoenixTech - Productos</title>
+    <title>Productos</title>
     <link rel="icon" href="/resources/img/Logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/resources/css/estilos.css">
@@ -27,12 +27,12 @@
                     <a class="nav-link active" aria-current="page" href="vsc-product">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="quienes.html">Sobre Nosotros</a>
+                    <a class="nav-link active" href="/quienes">Sobre Nosotros</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="login.html"><i class="bi bi-box-arrow-in-right"></i></a>
+                    <a class="nav-link active" href="/login"><i class="bi bi-box-arrow-in-right"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="carrito.html"><i class="bi bi-cart4"></i><span

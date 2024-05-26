@@ -47,6 +47,7 @@ public class ProductController {
         return principal.toString();
     }
 
+
     //---------------------------------------------------------------
     @GetMapping(value = "/uploads/{filename}")
     public ResponseEntity<Resource> goImage(@PathVariable String filename) {

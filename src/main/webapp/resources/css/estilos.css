@@ -209,7 +209,31 @@ body{
     object-fit: cover;
 }
 
+.section {
+    margin-top: 20px;
+}
+.section h2 {
+    margin-bottom: 15px;
+}
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.contact-form {
+    margin-top: 20px;
+}
 
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+.product-details {
+    margin-top: 20px;
+}
+.product-description {
+    margin-top: 10px;
+}
 
 
 
