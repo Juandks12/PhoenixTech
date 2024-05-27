@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,21 +59,21 @@
 <div class="container center-screen">
     <div class="jumbotron text-center">
         <h1>Registrate</h1>
-        <c:if test="${REGISTRO != null}">
+        <c:if test="${register != null}">
             <p>Nombre: ${REGISTRO}</p>
-            <p>${REGISTRO.userid}</p>
-            <p>${REGISTRO.userNombre}</p>
-            <p>${REGISTRO.userApellido}</p>
-            <p>${REGISTRO.userUser}</p>
+            <p>${register.userid}</p>
+            <p>${register.userNombre}</p>
+            <p>${register.userApellido}</p>
+            <p>${register.userUser}</p>
             <ul>
-                <c:forEach items="${REGISTRO.roles}" var="rol">
+                <c:forEach items="${register.roles}" var="rol">
                     <li>${rol.rolNombre}</li>
                 </c:forEach>
             </ul>
         </c:if>
 
-        <c:if test="${REGISTRO == null}">
-            <p> NO HAY REGISTRO AUN HECHO :) recuerda ir a UserService linea 47 al 52</p>
+        <c:if test="${register == null}">
+            <p> NO HAY register AUN HECHO :) recuerda ir a UserService linea 47 al 52</p>
         </c:if>
     </div>
     <button onclick="window.location.href='/';">Regresar a página principal</button>

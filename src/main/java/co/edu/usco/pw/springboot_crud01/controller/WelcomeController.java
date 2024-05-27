@@ -60,7 +60,7 @@ public class WelcomeController {
 
 		try {
 			Users user = userService.registro();
-			model.addAttribute("REGISTRO", user);
+			model.addAttribute("register", user);
 			System.out.println(model);
 			return "register";
 		} catch (Exception e) {

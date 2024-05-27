@@ -29,7 +29,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/", "/welcome", "/login", "/h2-console/**", "/vsc-product", "/register", "/resources/**").permitAll() // Agregando "/css/**" y "/js/**" para permitir acceso a archivos estáticos
+                .antMatchers("/", "/welcome", "/login", "/h2-console/**", "/vsc-product", "/quienes", "/register", "/resources/**").permitAll()
                 .antMatchers("/welcome").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/welcome/user").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/index", "/vsc-products").hasAnyRole("USER", "ADMIN")
