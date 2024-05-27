@@ -28,6 +28,15 @@ public class ProductController {
 
     @Autowired
     private IUploadFileService uploadFileService;
+    @Autowired
+    private ProductRepository productRepository;
+
+    // ESTA DICIENDO QUE DEBE TENER UN ID O UN PAREMTRO
+    @RequestMapping(value = "/product-details/{id}", method = RequestMethod.GET)
+    public String showProductDetails(@PathVariable(value = "id", required = true) long id, ModelMap model) {
+        model.put("product", productService.getProductById(id).get());
+        return "products/product-details";
+    }
 
     //---------------------------------------------------------------
     @RequestMapping(value = "/list-products", method = RequestMethod.GET)
@@ -103,14 +112,22 @@ public class ProductController {
         return "products/product";
     }
 
-    //---------------------------------------------------------------
     @RequestMapping(value = "/update-product", method = RequestMethod.POST)
-    public String updateProduct(ModelMap model, @Valid Product product, BindingResult result) {
+    public String updateProduct(ModelMap model, @Valid @ModelAttribute("product") Product product, BindingResult result, @RequestParam("file") MultipartFile image, RedirectAttributes flash, SessionStatus status) throws Exception  {
         if (result.hasErrors()) {
             return "products/product";
+        }else {
+            if (!image.isEmpty()) {
+                if (product.getId() > 0 && product.getImage() != null && product.getImage().length() > 0) {
+                    uploadFileService.delete(product.getImage());
+                }
+                String uniqueFileName = uploadFileService.copy(image);
+                product.setImage(uniqueFileName);
+            }
+            product.setUserName(getLoggedInUserName(model));
+            productService.saveProduct(product);
+            return "redirect:/list-products";
         }
-        productService.updateProduct(product);
-        return "redirect:/list-products";
     }
 
 

@@ -61,7 +61,7 @@
                             <h5 class="card-title">${product.nameProduct}</h5>
                             <p class="card-text">${product.description}</p>
                             <p class="card-text">$ ${product.price}</p>
-                            <a href="product-details.jsp?id=${product.id}" class="btn btn-primary">Conocer más</a>
+                            <a href="/product-details/${product.id}" class="btn btn-primary">Conocer más</a>
                         </div>
                     </div>
                 </div>

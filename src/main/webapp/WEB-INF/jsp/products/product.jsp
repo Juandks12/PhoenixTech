@@ -45,7 +45,7 @@
     <h2>Adicionar Producto</h2>
     <div class="row">
         <div class="col-md-6">
-            <form method="post" action="add-product" enctype="multipart/form-data">
+            <form method="post" action="add-product" enctype="multipart/form-data" modelAttribute="product">
                 <form:hidden path="id"/>
                 <div class="mb-3">
                     <label for="nameProduct" class="form-label">Nombre Producto</label>
@@ -54,6 +54,10 @@
                 <div class="mb-3">
                     <label for="description" class="form-label">Descripción</label>
                     <input type="text" class="form-control" id="description" name="description" required>
+                </div>
+                <div class="mb-3">
+                    <label for="feature" class="form-label">Características</label>
+                    <input type="text" class="form-control" id="feature" name="feature" required>
                 </div>
                 <div class="mb-3">
                     <label for="price" class="form-label">Precio</label>

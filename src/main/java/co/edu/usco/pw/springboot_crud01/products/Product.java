@@ -21,16 +21,19 @@ public class Product {
 
     private String description;
 
+    private String feature;
+
     private String price;
 
     private String image;
 
 
-    public Product(long id, String userName, String nameProduct, String description, String price, String image) {
+    public Product(long id, String userName, String nameProduct, String description, String feature, String price, String image) {
         this.id = id;
         this.userName = userName;
         this.nameProduct = nameProduct;
         this.description = description;
+        this.feature = feature;
         this.price = price;
         this.image = image;
     }
@@ -39,7 +42,7 @@ public class Product {
 
     }
 
-    public Product(String nameProduct, String description, String price, String image) {
+    public Product(String nameProduct, String description, String price, String feature, String image) {
 
     }
 
@@ -65,6 +68,14 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getFeature() {
+        return feature;
+    }
+
+    public void setFeature(String feature) {
+        this.feature = feature;
     }
 
     public String getPrice() {

@@ -15,7 +15,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a href="/index"><img src="../../../resources/img/Logo.png" class="logo"></a>
+        <a href="/"><img src="../../../resources/img/Logo.png" class="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,7 +55,9 @@
                 <tr>
                     <th>Nombre Producto</th>
                     <th>Descripción</th>
+                    <th>Caracteristicas</th>
                     <th>Precio</th>
+                    <th>Imagen</th>
                     <th>Acciones</th>
                 </tr>
                 </thead>
@@ -65,6 +67,7 @@
                     <tr>
                         <td>${product.nameProduct}</td>
                         <td>${product.description}</td>
+                        <td>${product.feature}</td>
                         <td>${product.price}</td>
                         <td><img class="img-list" src="../uploads/${product.image}" alt="producto"/></td>
 

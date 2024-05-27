@@ -29,8 +29,8 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public void addProduct(String nameProduct, String description, String price, String image) {
-        productRepository.save(new Product(nameProduct, description, price, image));
+    public void addProduct(String nameProduct, String description, String feature, String price, String image) {
+        productRepository.save(new Product(nameProduct, description, feature, price, image));
     }
 
     @Override

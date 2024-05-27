@@ -41,7 +41,9 @@
         </div>
     </div>
 </nav>
-
+<div class="container section text-center">
+    <div class="row">
+        <div class="col-12">
 <div class="container section">
     <div class="row">
         <div class="col-12">
@@ -78,6 +80,9 @@
         </div>
     </div>
 </div>
+        </div>
+    </div>
+</div>
 
 <div class="container section contact-form">
     <div class="row">
@@ -96,11 +101,13 @@
                     <label for="message" class="form-label">Mensaje</label>
                     <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-success">Enviar</button>
+
             </form>
         </div>
     </div>
 </div>
+
 
 <footer class="footer mt-5">
     <div class="red-social">
