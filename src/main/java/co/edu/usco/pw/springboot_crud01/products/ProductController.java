@@ -31,7 +31,7 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
-    // ESTA DICIENDO QUE DEBE TENER UN ID O UN PAREMTRO
+    // Devolver ID
     @RequestMapping(value = "/product-details/{id}", method = RequestMethod.GET)
     public String showProductDetails(@PathVariable(value = "id", required = true) long id, ModelMap model) {
         model.put("product", productService.getProductById(id).get());

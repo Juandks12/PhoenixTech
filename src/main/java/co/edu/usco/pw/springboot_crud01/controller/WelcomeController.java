@@ -40,15 +40,15 @@ public class WelcomeController {
 			UserDetails userDetails = userService.loadUserByUsername(username);
 			System.out.println(userDetails);
 			if (passwordEncoder.matches(password, userDetails.getPassword())) {
-				// Autenticación exitosa, redirigir al usuario a la página de inicio
+
 				return "redirect:/index";
 			} else {
-				// La contraseña es incorrecta, mostrar un mensaje de error
+
 				model.addAttribute("error", "Nombre de usuario o contraseña incorrectos");
 				return "login";
 			}
 		} catch (UsernameNotFoundException e) {
-			// El nombre de usuario no existe, mostrar un mensaje de error
+
 			model.addAttribute("error", "Nombre de usuario o contraseña incorrectos");
 			return "login";
 		}

@@ -21,7 +21,7 @@ public class Users {
    
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 
-    //ESTO SIGNIFICA QUE SE UNIRA A UNA TABLA
+
     @JoinTable(
             
             name = "user_roles",       

@@ -33,7 +33,7 @@
                     <a class="nav-link" href="${pageContext.request.contextPath}/login"><i class="bi bi-box-arrow-in-right"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/carrito.html"><i class="bi bi-cart4"></i><span class="numero">0</span></a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/cart"><i class="bi bi-cart4"></i><span class="numero">0</span></a>
                 </li>
             </ul>
         </div>

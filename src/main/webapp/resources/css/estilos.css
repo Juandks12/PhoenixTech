@@ -242,5 +242,16 @@ body{
     box-shadow: 0 4px 8px rgb(255, 165, 0);
 }
 
+body {
+    padding-top: 20px;
+
+}
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
 
 

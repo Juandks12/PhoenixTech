@@ -26,15 +26,15 @@
                     <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="quienes.html">Sobre Nosotros</a>
+                    <a class="nav-link active" href="/quienes">Sobre Nosotros</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="login.html"><i class="bi bi-box-arrow-in-right"></i></a>
+                    <a class="nav-link active" href="/login"><i class="bi bi-box-arrow-in-right"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="carrito.html"><i class="bi bi-cart4"></i><span class="numero">0</span></a>
+                    <a class="nav-link active" href="/cart"><i class="bi bi-cart4"></i><span class="numero">0</span></a>
                 </li>
             </ul>
         </div>

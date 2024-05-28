@@ -11,18 +11,6 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src=""${pageContext.request.contextPath}/resources/js/index.js"" defer></script>
-    <style>
-        body {
-            padding-top: 20px;
-
-        }
-        .center-screen {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-        }
-    </style>
 </head>
 
 <body>
@@ -38,7 +26,7 @@
                     <a class="nav-link active" aria-current="page" href="/productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/quienes.html">Sobre Nosotros</a>
+                    <a class="nav-link active" href="/quienes">Sobre Nosotros</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -46,7 +34,7 @@
                     <a class="nav-link active" href="/login"><i class="bi bi-box-arrow-in-right"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/carrito.html"><i class="bi bi-cart4"></i><span class="numero">0</span></a>
+                    <a class="nav-link active" href="/cart"><i class="bi bi-cart4"></i><span class="numero">0</span></a>
                 </li>
             </ul>
             <!--<li class="nav-item">

@@ -6,7 +6,7 @@ import java.util.List;
 
 
 
-//AQUI ES DONDE SE MENCIONAN QUE TENDRAN LOS SERVICIOS DE AUTENTICACION
+
 public interface UserDetService extends UserDetailsService {
 
 

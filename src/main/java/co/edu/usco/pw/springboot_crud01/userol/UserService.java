@@ -20,19 +20,13 @@ public class UserService implements UserDetService{
     private UserRepository userRepository;
 
 
-    //PARA LISTAR USUARIOS
+
     public Users getData(String user){
         return userRepository.findByUserUser(user);
     }
 
 
-    //AL PARECER AQUI ES DONDE HACE LA MAGIA EL INICIO DE SESION
 
-    //CREANDO LOS USUARIOS DE MANERA QUEMADA --> NO RECOMENDABLE NECESITARIA UNA CLASE DTO DONDE NO ME PIDA PONER LA
-    //
-
-    // ? AQUI ESTOY HACIENDO EL REGISTRO EN LA BASE DE DATOS DE MANERA EXPLICITA
-    // ? EL REGISTRO SOLO SUCEDE CUANDO VAS A LA RUTA /REGISTER
     public Users registro(){
         Users usuario = new Users("Juan", "Roldan", "admin", "juan1012",
                 Arrays.asList(new rol("ROLE_ADMIN")));
@@ -56,7 +50,7 @@ public class UserService implements UserDetService{
     }
 
 
-    //MAPEO DE ROL
+
     private Collection<? extends GrantedAuthority>  mapRoles(Collection<rol> roles){
 
         return roles.stream().map(role -> new SimpleGrantedAuthority(role.getRolNombre())).collect(Collectors.toList());

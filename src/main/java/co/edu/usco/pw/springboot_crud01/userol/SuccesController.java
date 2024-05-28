@@ -24,7 +24,6 @@ public class SuccesController {
 
         String currentUserName = SecurityContextHolder.getContext().getAuthentication().getName();
 
-        //OBTENER TODOS LOS ATRIBUTOS
 
         Users userInfo = userService.getData(currentUserName);
 
@@ -49,8 +48,6 @@ public class SuccesController {
 
         return "admin";
     }
-
-
 
 
 
