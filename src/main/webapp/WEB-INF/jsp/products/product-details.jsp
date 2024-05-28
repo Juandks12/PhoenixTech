@@ -54,7 +54,9 @@
             <p class="product-feature">
                 ${product.feature}
             </p>
-            <button onclick="MP()">Comprar</button>
+            <button class="btn btn-primary btn-lg btn-custom" onclick="MP()">
+                <i class="bi bi-cart"></i> Comprar
+            </button>
             <div id="wallet_container"></div>
         </div>
     </div>

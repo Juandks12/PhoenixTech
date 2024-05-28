@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,20 +15,19 @@
     <script src="/resources/js/index.js" defer></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+<nav data-dark class="navbar navbar-expand-lg bg-body-tertiary">
+    <div data-dark class="container-fluid">
         <a href="/"><img src="/resources/img/Logo.png" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="vsc-product">Productos</a>
+                    <a class="nav-link active" aria-current="page" href="/vsc-product"><spring:message code="index.navbar.products" /></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/quienes">Sobre Nosotros</a>
+                    <a class="nav-link active" href="/quienes"><spring:message code="index.navbar.about" /></a>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -35,8 +35,20 @@
                     <a class="nav-link active" href="/login"><i class="bi bi-box-arrow-in-right"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="cart"><i class="bi bi-cart4"></i><span
-                            class="numero">0</span></a>
+                    <a class="nav-link active" href="/cart"><i class="bi bi-cart4"></i><span class="numero">0</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="?lang=en">English</a></li>
+                        <li><a class="dropdown-item" href="?lang=fr">Français</a></li>
+                        <li><a class="dropdown-item" href="?lang=de">Deutsch</a></li>
+                        <li><a class="dropdown-item" href="?lang=es">Español</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>

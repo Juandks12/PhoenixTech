@@ -56,7 +56,7 @@
 
 <main>
   <a href="https://wa.link/tigrqn" class="container-banner">
-    <img src="${pageContext.request.contextPath}/resources/img/Banner Principal.png" class="img-banner" alt="<spring:message code="index.banner.alt" />">
+    <img src="${pageContext.request.contextPath}/resources/img/Banner Principal.png" class="img-banner" alt="" />
   </a>
 
   <div class="productos-inicio">
@@ -96,13 +96,6 @@
         <a href="https://www.xbox.com/es-CO/consoles/xbox-series-s" class="btn btn-primary">Saber más</a>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
-      <img src="${pageContext.request.contextPath}/resources/img/g203.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">LOGITECH G203 Lightsync</h5>
-        <p class="card-text">$ 120.000</p>
-        <a href="https://www.logitechg.com/es-roam/products/gaming-mice/g203-lightsync-rgb-gaming-mouse.910-005795.html" class="btn btn-primary">Saber más</a>
-      </div>
     </div>
   </div>
 </main>
