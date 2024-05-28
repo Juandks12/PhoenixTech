@@ -86,13 +86,13 @@ body{
     font-size: 35px;
     padding-left: 25px;
     padding-top: 25px;
-    color: rgb(255, 165, 0);
+    color: black;
 }
 
 /* COLORES*/
 
 .custom-title {
-    color: rgb(255, 165, 0);
+    color: black;
 }
 /* MENU*/
 
@@ -157,14 +157,13 @@ body{
     transition: all 0.3s ease-out;
   }
 
-  /*SLIDER*/
-/* Estilos CSS para el carrusel */
+
 
 .container-slider {
     overflow: hidden;
     position: relative;
-    display: flex; /* Agregar display flex para centrar horizontalmente */
-    justify-content: center; /* Centrar horizontalmente */
+    display: flex;
+    justify-content: center;
     gap: 80px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -180,8 +179,8 @@ body{
   }
 
 .card {
-    flex: 0 0 auto; /* Evitamos que las cartas se expandan para ajustarse al contenedor */
-    width: 18rem; /* Ancho de cada carta */
+    flex: 0 0 auto;
+    width: 18rem;
 }
 
 

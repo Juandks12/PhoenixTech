@@ -17,21 +17,15 @@ public class Users {
     private String UserUser;
     private String UserPassword;
 
-    //APARTIR DE AQUI VA SURGIR LA RELACION DE ROL
-
-    //VA HACER UN MAPEO DE LA RELACION ES DECIR HARA UNA ENTIDAD DEBIL EN LA QUE EVITARA EL MANY TO MANY
-
-
-    // FetchType.EAGER La carga ansiosa (EAGER) significa que todas o algunas de estas
-    // relaciones se cargarán junto con la entidad principal, en una sola consulta a la base de datos.
-    // y esto lo haria de manera automatica :D
+        
+   
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 
     //ESTO SIGNIFICA QUE SE UNIRA A UNA TABLA
     @JoinTable(
-            //NOMBRE DE LA TABLA A LA QUE PERTENECE
-            name = "user_roles",        //USER ID NOMBRE DE LA COLUMNA -- REFERENCE ES DONDE VA TOMAR EL EN LA TABLA
-            //User que en este caso tomara la columna id
+            
+            name = "user_roles",       
+        
             joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "Userid"),
             //UNION DE LA OTRA COLUMNA
             inverseJoinColumns = @JoinColumn(name = "rol_id", referencedColumnName = "rolId")

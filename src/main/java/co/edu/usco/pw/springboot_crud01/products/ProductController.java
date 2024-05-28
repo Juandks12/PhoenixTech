@@ -38,6 +38,12 @@ public class ProductController {
         return "products/product-details";
     }
 
+    @RequestMapping(value = "/add-to-cart/{id}", method = RequestMethod.GET)
+    public String showAddToCart(@PathVariable(value = "id", required = true) long id, ModelMap model) {
+        model.put("product", productService.getProductById(id).get());
+        return "products/add-to-cart";
+    }
+
     //---------------------------------------------------------------
     @RequestMapping(value = "/list-products", method = RequestMethod.GET)
     public String showProducts(ModelMap model) {

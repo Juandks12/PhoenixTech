@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="${pageContext.request.contextPath}/resources/js/index.js" defer></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -53,7 +54,8 @@
             <p class="product-feature">
                 ${product.feature}
             </p>
-            <a href="${pageContext.request.contextPath}/add-to-cart?productId=${product.id}" class="btn btn-primary">Agregar al Carrito</a>
+            <button onclick="MP()">Comprar</button>
+            <div id="wallet_container"></div>
         </div>
     </div>
 </div>

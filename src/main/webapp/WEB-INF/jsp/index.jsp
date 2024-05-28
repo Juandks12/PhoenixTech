@@ -34,7 +34,7 @@
           <a class="nav-link active" href="/login"><i class="bi bi-box-arrow-in-right"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/carrito.html"><i class="bi bi-cart4"></i><span class="numero">0</span></a>
+          <a class="nav-link active" href="/cart"><i class="bi bi-cart4"></i><span class="numero">0</span></a>
         </li>
       </ul>
       <ul class="navbar-nav">
@@ -69,7 +69,7 @@
       <div class="card-body">
         <h5 class="card-title">Playstation 5</h5>
         <p class="card-text">$ 2.240.000</p>
-        <a href="#" class="btn btn-primary">Saber más</a>
+        <a href="https://www.playstation.com/es-co/ps5/" class="btn btn-primary">Saber más</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -77,7 +77,7 @@
       <div class="card-body">
         <h5 class="card-title">Acer Nitro 5</h5>
         <p class="card-text">$ 3.850.000</p>
-        <a href="#" class="btn btn-primary">Saber más</a>
+        <a href="https://www.acer.com/es-es/laptops/nitro/nitro-5" class="btn btn-primary">Saber más</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -85,7 +85,7 @@
       <div class="card-body">
         <h5 class="card-title">VSG Mintaka</h5>
         <p class="card-text">$ 235.000</p>
-        <a href="#" class="btn btn-primary">Saber más</a>
+        <a href="https://co.vsglatam.com/products/mintaka" class="btn btn-primary">Saber más</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -93,7 +93,7 @@
       <div class="card-body">
         <h5 class="card-title">Xbox Series S</h5>
         <p class="card-text">$ 1.650.000</p>
-        <a href="#" class="btn btn-primary">Saber más</a>
+        <a href="https://www.xbox.com/es-CO/consoles/xbox-series-s" class="btn btn-primary">Saber más</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -101,7 +101,7 @@
       <div class="card-body">
         <h5 class="card-title">LOGITECH G203 Lightsync</h5>
         <p class="card-text">$ 120.000</p>
-        <a href="#" class="btn btn-primary">Saber más</a>
+        <a href="https://www.logitechg.com/es-roam/products/gaming-mice/g203-lightsync-rgb-gaming-mouse.910-005795.html" class="btn btn-primary">Saber más</a>
       </div>
     </div>
   </div>

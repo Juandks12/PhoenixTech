@@ -70,14 +70,15 @@ public class WelcomeController {
 
 	}
 
-	@GetMapping("product1")
-	public String product1() {
-		return "product1";
-	}
 
 	@GetMapping("quienes")
 	public String quienes() {
 		return "quienes";
+	}
+
+	@GetMapping("cart")
+	public String cart() {
+		return "cart";
 	}
 
 

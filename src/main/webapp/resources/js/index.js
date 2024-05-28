@@ -38,6 +38,44 @@ const classDark = "dark-mode";
         behavior: 'smooth'
     });
 }
+//mecadopago
+const mp = new MercadoPago('TEST-03112ee0-d05c-4612-a1fc-d29cd516f28f', {
+    locale: 'es-CO'
+});
+
+  const MP = async () => {
+      try{
+          miArticulo ={}
+          miArticulo.title = 'consola';
+          miArticulo.quantity = 1;
+          miArticulo.unit_price = 1500000;
+
+
+          const response = await fetch('api/mp', {
+              method: 'POST',
+              headers: {
+                  'Accept': 'Application/json',
+                  'Content-Type': 'Application/json'
+              },
+                body: JSON.stringify(miArticulo)
+          })
+          const preference = await response.text()
+          createCheckoutButton(preference)
+      } catch (e){alert('error '+ e)}
+  }
+
+  const createCheckoutButton = (preferenceId_OK) => {
+      const bricksBuilder = mp.bricks();
+      const generateButton = async () => {
+          if(window.checkoutButton) window.checkoutButton.unmount()
+          bricksBuilder.create("wallet", "wallet_container", {
+              initialization: {
+                  preferenceId: preferenceId_OK,
+              },
+          });
+      }
+      generateButton()
+  }
 
 
 
